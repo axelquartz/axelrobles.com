@@ -1,0 +1,241 @@
+/* General Dark Theme Setup */
+body {
+    background-color: #0d0d0d;
+    color: #f0f0f0;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+  }
+  
+  /* Typography */
+  h1, h2, h3 {
+    font-weight: 600;
+    line-height: 1.2;
+    margin-bottom: 0.5em;
+  }
+  
+  h1 { font-size: 2.5em; }
+  h2 { font-size: 2em; margin-top: 2em; }
+  h3 { font-size: 1.5em; margin-top: 1.5em; }
+  
+  ul {
+    padding-left: 1.5em;
+  }
+  
+  ul li {
+    margin-bottom: 0.5em;
+  }
+  
+  /* Containers */
+  section, header, footer {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 3em 1em;
+    box-sizing: border-box;
+  }
+  
+  /* Hero Section */
+  #hero {
+    background-image: url('https://images.pexels.com/photos/352097/pexels-photo-352097.jpeg');
+    background-color: #cbff5b;
+    border-radius: 32px;
+    background-size: cover;
+    background-position: center;
+    padding: 2rem 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 40vh;
+  }
+  
+  .hero-highlight {
+    background-color: #0d0d0d;
+    padding: 3rem 2rem;
+    border-radius: 32px;
+    max-width: 800px;
+    width: 100%;
+  }
+  
+  .hero-highlight h1 {
+    font-size: 3rem;
+    font-weight: 700;
+    line-height: 1.2;
+    margin-bottom: 1rem;
+  }
+  
+  .hero-highlight p {
+    font-size: 1.25rem;
+    margin-bottom: 1rem;
+    color: #ccc;
+  }
+  
+  .hero-buttons {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    margin-top: 2rem;
+  }
+  
+  .hero-buttons button {
+    border-radius: 9999px;
+    padding: 0.75rem 1.5rem;
+    font-weight: 600;
+    font-size: 1rem;
+  }
+  
+  .hero-content {
+    background: rgba(0, 0, 0, 0.6);
+    display: inline-block;
+    padding: 2em;
+    border-radius: 16px;
+  }
+  
+  /* Buttons */
+  button {
+    background-color: #cbff5b;
+    color: #000;
+    padding: 0.75em 1.5em;
+    margin: 0.5em;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #eaff89;
+  }
+  
+  /* Pricing Grid */
+  .paquetes-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 2rem;
+  }
+  
+  .beneficio-box {
+    background-color: rgba(255, 255, 255, 0.02);
+    padding: 2.5rem;
+    border-radius: 16px;
+    border: 1px solid #333;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .beneficios-lista {
+    list-style: none;
+    padding-left: 0;
+    margin: 0;
+  }
+
+  .beneficios-lista.columnas {
+    columns: 2;
+    column-gap: 2rem;
+  }
+  
+  
+  .beneficios-lista li {
+    display: flex;
+    align-items: start;
+    gap: 0.5em;
+    margin-bottom: 1em;
+    font-size: 1rem;
+    line-height: 1.6;
+  }
+  
+  .beneficios-lista .icono {
+    color: #cbff5b;
+    font-weight: bold;
+    font-size: 1.2em;
+    flex-shrink: 0;
+  }
+  
+  .vendedor-frase {
+    margin-top: 2rem;
+    text-align: center;
+    font-style: italic;
+    font-size: 1.2rem;
+    color: #cbff5b;
+    line-height: 1.6;
+  }
+  
+
+  .paquete {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 600px; /* ajusta según el contenido */
+    background-color: #111;
+    border: 1px solid #333;
+    border-radius: 16px;
+    padding: 2rem;
+    min-width: 280px;
+    flex-shrink: 0;
+    transition: border 0.3s ease, transform 0.3s ease;
+    flex: 1 1 calc(25% - 2rem);
+    box-sizing: border-box;
+  }
+
+  .paquete button {
+    margin-top: auto;
+  }body {
+    font-family: 'Kanit', sans-serif;
+  }
+  
+  .paquete:hover {
+    border-color: #cbff5b;
+    transform: translateY(-5px);
+  }
+  
+  /* Price Highlight */
+  .precio {
+    font-size: 2rem;
+    font-weight: bold;
+    margin: 0.5em 0;
+    color: #cbff5b;
+  }
+  
+  /* Links */
+  a {
+    color: #cbff5b;
+    text-decoration: none;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Images (if used later) */
+  img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 12px;
+    margin-bottom: 1em;
+  }
+  
+  /* Footer */
+  footer {
+    background-color: #111;
+    font-size: 0.9em;
+    text-align: center;
+    padding: 2em 1em;
+    color: #aaa;
+  }
+  
+  /* Responsive */
+  @media (max-width: 1024px) {
+    .paquetes-row {
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+  
+    .paquete {
+      flex: 1 1 100%;
+      max-width: 100%;
+    }
+  }
+  
