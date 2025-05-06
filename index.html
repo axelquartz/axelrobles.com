@@ -161,24 +161,27 @@
   <section id="portafolio">
     <h2>Ejemplos de sitios creados</h2>
     <div class="portafolio-row">
-      <article class="ejemplo">
-        <img src="https://via.placeholder.com/600x300" alt="Sitio Piso Fino Floors">
-        <h3>Piso Fino Floors</h3>
-        <p><a href="https://pisofinofloors.com" target="_blank">pisofinofloors.com</a></p>
-        <p>Negocio de pisos y acabados</p>
-      </article>
-      <article class="ejemplo">
-        <img src="https://via.placeholder.com/600x300" alt="Sitio Café Bruma">
-        <h3>Café Bruma</h3>
-        <p><a href="#">cafebruma.com</a></p>
-        <p>Cafetería de especialidad</p>
-      </article>
-      <article class="ejemplo">
-        <img src="https://via.placeholder.com/600x300" alt="Sitio Estética Coral">
-        <h3>Estética Coral</h3>
-        <p><a href="#">esteticacoral.mx</a></p>
-        <p>Salón de belleza</p>
-      </article>
+      <a href="https://pisofinofloors.com" class="ejemplo-link" target="_blank">
+        <article class="ejemplo">
+          <img src="src/img/pexels-joshsorenson-1714208.jpg" alt="Sitio Piso Fino Floors">
+          <h3>Piso Fino Floors</h3>
+          <p>Negocio de pisos y acabados</p>
+        </article>
+      </a>
+      <a href="#" class="ejemplo-link" target="_blank">
+        <article class="ejemplo">
+          <img src="src/img/pexels-joshsorenson-1714208.jpg" alt="Sitio Café Bruma">
+          <h3>Café Bruma</h3>
+          <p>Cafetería de especialidad</p>
+        </article>
+      </a>
+      <a href="#" class="ejemplo-link" target="_blank">
+        <article class="ejemplo">
+          <img src="src/img/pexels-joshsorenson-1714208.jpg" alt="Sitio Estética Coral">
+          <h3>Estética Coral</h3>
+          <p>Salón de belleza</p>
+        </article>
+      </a>
     </div>
   </section>
 
@@ -212,10 +215,14 @@
 
   <!-- 6. Contacto -->
   <section id="contacto">
-    <h2>No pierdas más clientes</h2>
-    <p>Un sitio profesional puede cambiar la forma en que te buscan, te ven y te contactan.</p>
-    <button onclick="window.open('https://wa.me/523328319483?text=Hola%2C%20quiero%20cotizar%20un%20sitio%20web.', '_blank')">Cotizar por WhatsApp</button>
-    <button>Enviar mensaje</button>
+    <div class="contact-container">
+      <h2>No pierdas más clientes</h2>
+      <p class="contact-subtitle">Un sitio profesional puede cambiar la forma en que te buscan, te ven y te contactan.</p>
+      <div class="contact-buttons">
+        <button class="whatsapp-btn" onclick="window.open('https://wa.me/523328319483?text=Hola%2C%20quiero%20cotizar%20un%20sitio%20web.', '_blank')">Cotizar por WhatsApp</button>
+        <button class="email-btn">Enviar mensaje</button>
+      </div>
+    </div>
   </section>
 
   <!-- 7. Footer -->

@@ -8,7 +8,10 @@
 }
 
 /* Variables */
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;500;600;700&display=swap');
+
 :root {
+  --font-primary: 'Kanit', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
   --primary: #cbff5b;     /* Greenish accent */
   --primary-dark: #a8e632;
   --accent: #cbff5b;      /* Greenish accent */
@@ -37,7 +40,7 @@ html {
 }
 
 body {
-  font-family: var(--font-body);
+  font-family: var(--font-primary);
   line-height: 1.6;
   color: var(--text);
   background-color: var(--bg-light);
@@ -47,7 +50,7 @@ body {
 
 /* Typography */
 h1, h2, h3, h4, h5, h6 {
-  font-family: var(--font-heading);
+  font-family: var(--font-primary);
   font-weight: 700;
   line-height: 1.1;
   margin-bottom: var(--spacing-md);
@@ -221,7 +224,7 @@ section {
   height: 60%;
   bottom: 0;
   left: 0;
-  background-color: var(--primary);
+  background-image: url('/src/img/pexels-joshsorenson-1714208.jpg');
   z-index: 1;
 }
 
@@ -379,7 +382,7 @@ section {
   line-height: 1.4;
   color: var(--text);
   margin: var(--spacing-lg) 0;
-  padding: var(--spacing-md);
+  padding: var(--spacing-sm);
   position: relative;
   max-width: 60ch;
   margin-left: auto;
@@ -390,7 +393,6 @@ section {
 }
 
 .vendedor-frase:before {
-  content: '"';
   font-size: 3rem;
   position: absolute;
   top: -1rem;
@@ -546,6 +548,251 @@ section {
   background-color: var(--primary-dark);
   transform: translateY(-2px);
   box-shadow: 0 6px 14px rgba(203, 255, 91, 0.4);
+}
+
+/* Portfolio Section */
+#portafolio {
+  background-color: var(--bg-subtle);
+  padding: var(--spacing-xl) 0;
+}
+
+.portafolio-row {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 320px));
+  gap: var(--spacing-md);
+  margin: 0 auto;
+  justify-content: center;
+  padding: 0 var(--spacing-md);
+}
+
+#portafolio h2 {
+  text-align: center;
+  margin-bottom: var(--spacing-xl);
+  position: relative;
+  display: block;
+  max-width: 26ch;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#portafolio h2:after {
+  content: '';
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 60px;
+  height: 3px;
+  background-color: var(--primary);
+}
+
+.ejemplo-link {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+}
+
+.ejemplo {
+  background-color: var(--bg-dark);
+  border-radius: var(--border-radius);
+  overflow: hidden;
+  transition: all 0.3s ease;
+  border: 1px solid rgba(255,255,255,0.05);
+  height: 100%;
+}
+
+.ejemplo-link:hover .ejemplo {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.2), 0 0 10px rgba(203, 255, 91, 0.1);
+}
+
+.ejemplo img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.ejemplo h3 {
+  font-size: 1.5rem;
+  padding: var(--spacing-sm) var(--spacing-md) 0;
+  margin-bottom: var(--spacing-xs);
+}
+
+.ejemplo p {
+  padding: 0 var(--spacing-md);
+  margin-bottom: var(--spacing-sm);
+}
+
+.ejemplo a {
+  display: none;
+}
+
+/* Testimonials Section */
+#testimonios {
+  background-color: var(--bg-light);
+  padding: var(--spacing-xl) 0;
+}
+
+#testimonios h2 {
+  text-align: center;
+  margin-bottom: var(--spacing-xl);
+  position: relative;
+  display: block;
+  max-width: 26ch;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#testimonios h2:after {
+  content: '';
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 60px;
+  height: 3px;
+  background-color: var(--primary);
+}
+
+.slider {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 0 var(--spacing-md);
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 400px));
+  justify-content: center;
+  gap: var(--spacing-md);
+}
+
+.testimonio {
+  background-color: var(--bg-dark);
+  border-radius: 16px;
+  padding: var(--spacing-md);
+  margin: 0;
+  transition: all 0.3s ease;
+  border: 1px solid rgba(255,255,255,0.05);
+}
+
+.testimonio img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin: 0 auto var(--spacing-sm);
+  display: block;
+  border: 2px solid var(--primary);
+}
+
+.testimonio blockquote {
+  margin: 0;
+  font-style: italic;
+  position: relative;
+}
+
+.testimonio blockquote:before {
+  content: '"\201D';
+  position: absolute;
+  top: -10px;
+  left: -15px;
+  font-size: 3rem;
+  color: var(--primary);
+  opacity: 0.2;
+}
+
+.testimonio footer {
+  margin-top: var(--spacing-sm);
+  font-weight: 600;
+  color: var(--primary);
+}
+
+/* Contact Section */
+#contacto {
+  background-color: var(--bg-light);
+  padding: var(--spacing-xl) var(--spacing-md);
+  text-align: center;
+}
+
+.contact-container {
+  max-width: var(--max-width);
+  margin: 0 auto;
+}
+
+.contact-subtitle {
+  max-width: 50ch;
+  margin: 0 auto var(--spacing-lg);
+  color: var(--text-muted);
+}
+
+.contact-buttons {
+  display: flex;
+  gap: var(--spacing-md);
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.whatsapp-btn {
+  background-color: #25D366;
+  color: white;
+}
+
+.whatsapp-btn:hover {
+  background-color: #128C7E;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 10px rgba(37, 211, 102, 0.3);
+}
+
+.email-btn {
+  background-color: var(--primary);
+  color: black;
+}
+
+.email-btn:hover {
+  background-color: var(--primary-dark);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 10px rgba(203, 255, 91, 0.3);
+}
+
+/* Footer */
+footer {
+  background-color: var(--bg-dark);
+  padding: var(--spacing-lg) 0;
+  text-align: center;
+  border-top: 1px solid rgba(255,255,255,0.05);
+}
+
+footer p {
+  margin-bottom: var(--spacing-sm);
+}
+
+footer a {
+  color: var(--primary);
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+footer a:hover {
+  color: var(--primary-dark);
+  text-decoration: underline;
+}
+
+/* Global Button Styles */
+button, .btn {
+  background-color: var(--primary);
+  color: #000;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  border-radius: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: inline-block;
+  text-align: center;
+}
+
+button:hover, .btn:hover {
+  background-color: var(--primary-dark);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 10px rgba(203, 255, 91, 0.3);
 }
 
 /* Animations */
