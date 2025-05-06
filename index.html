@@ -3,42 +3,85 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Sitios web profesionales para negocios - Axel Robles">
+  <title>Sitios Web para Negocios | Axel Robles</title>
   <link rel="stylesheet" href="./src/style.css">
-  <title>Sitios Web para Negocios</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preload" href="/src/img/pexels-joshsorenson-1714208.jpg" as="image">
 </head>
 <body>
 
-  <!-- 1. Hero Principal -->
-  <header id="hero" style="background-image: url('https://via.placeholder.com/1600x600'); background-size: cover; background-position: center;">
-    <div class="hero-highlight">
-      <h1>¿Tu negocio aún no tiene sitio web?</h1>
-      <p>Diseñamos páginas profesionales que te ayudan a atraer más clientes.</p>
-      <p>Desde <strong>$4,500 MXN</strong>, con entrega rápida, soporte incluido y diseño 100% adaptable a celular.</p>
-      <div class="hero-buttons">
-        <button onclick="location.href='#contacto'">Cotiza por WhatsApp</button>
-        <button onclick="location.href='#paquetes'">Ver paquetes</button>
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="container">
+      <div class="hero-grid">
+        <div class="hero-content">
+          <div class="mb-4">
+            <p class="intro-tag">• Hola, somos Axel Robles</p>
+          </div>
+          <h1 class="hero-title">
+            Sitios web y<br>
+            soluciones digitales<br>
+            para negocios
+          </h1>
+          <div class="hero-actions">
+            <a href="#portafolio" class="btn btn-primary">
+              Ver nuestro trabajo
+            </a>
+            <a href="#contacto" class="hero-link">
+              Conoce al equipo <span class="arrow">→</span>
+            </a>
+          </div>
+        </div>
+        <div class="hero-visual">
+          <div class="hero-image-container">
+            <div class="hero-image hero-image-1"></div>
+            <div class="hero-image hero-image-2"></div>
+          </div>
+        </div>
       </div>
     </div>
-  </header>
+  </section>
 
-  <!-- 2. Beneficios -->
-  <section id="beneficios" class="beneficios">
-    <h2>¿Por qué tu negocio necesita un sitio web?</h2>
-    <div class="beneficio-box">
-      <ul class="beneficios-lista columnas">
-    <div class="columna">
-      <li><span class="icono">✔</span> Atrae más clientes nuevos</li>
-      <li><span class="icono">✔</span> Da una imagen profesional y confiable</li>
-      <li><span class="icono">✔</span> Organiza toda tu información en un solo lugar</li>
-    </div>
-    <div class="columna">
-      <li><span class="icono">✔</span> Separa tu negocio de la competencia</li>
-      <li><span class="icono">✔</span> Recibe mensajes, pedidos o citas 24/7</li>
-      <li><span class="icono">✔</span> Comparte fácilmente por redes, link o QR</li>
-    </div>
-  </ul>
+  <!-- Benefits Section -->
+  <section id="beneficios">
+    <div class="container">
+      <h2>¿Por qué tu negocio necesita un sitio web?</h2>
+      
+      <div class="grid grid-cols-2">
+        <ul class="beneficios-lista">
+          <li>
+            <span class="icono">✔</span>
+            <span>Atrae más clientes nuevos</span>
+          </li>
+          <li>
+            <span class="icono">✔</span>
+            <span>Da una imagen profesional y confiable</span>
+          </li>
+          <li>
+            <span class="icono">✔</span>
+            <span>Organiza toda tu información en un solo lugar</span>
+          </li>
+        </ul>
+        
+        <ul class="beneficios-lista">
+          <li>
+            <span class="icono">✔</span>
+            <span>Separa tu negocio de la competencia</span>
+          </li>
+          <li>
+            <span class="icono">✔</span>
+            <span>Recibe mensajes, pedidos o citas 24/7</span>
+          </li>
+          <li>
+            <span class="icono">✔</span>
+            <span>Comparte fácilmente por redes, link o QR</span>
+          </li>
+        </ul>
+      </div>
+      
       <blockquote class="vendedor-frase">
-        Tu sitio web es tu vendedor silencioso, activo 24/7.
+        "Tu sitio web es tu vendedor silencioso, activo 24/7."
       </blockquote>
     </div>
   </section>
