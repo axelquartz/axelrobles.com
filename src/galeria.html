@@ -7,6 +7,7 @@
   <title>Galería | Axel Robles</title>
   <link rel="stylesheet" href="navbar.css">
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="galeria.css">
   <script defer src="navbar.js"></script>
 </head>
 <body>
@@ -30,17 +31,26 @@
     </div>
   </nav>
 
-  <!-- Gallery Page -->
   <section id="galeria">
-    <h2>Galería</h2>
-    <p>Explora algunos de nuestros mejores trabajos:</p>
+    <h2 class="section-title">Galería de Proyectos</h2>
+    <p class="section-subtitle">Explora nuestro trabajo destacado</p>
+    
     <div class="galeria-grid">
-      <img src="img/pexels-joshsorenson-1714208.jpg" alt="Galería 1">
-      <img src="img/pexels-joshsorenson-1714208.jpg" alt="Galería 2">
-      <img src="img/pexels-joshsorenson-1714208.jpg" alt="Galería 3">
-      <img src="img/pexels-joshsorenson-1714208.jpg" alt="Galería 4">
+      <div class="galeria-item">
+        <img src="img/pexels-joshsorenson-1714208.jpg" alt="Proyecto 1" loading="lazy">
+      </div>
+      <div class="galeria-item">
+        <img src="img/pexels-joshsorenson-1714208.jpg" alt="Proyecto 2" loading="lazy">
+      </div>
+      <div class="galeria-item">
+        <img src="img/pexels-joshsorenson-1714208.jpg" alt="Proyecto 3" loading="lazy">
+      </div>
+      <div class="galeria-item">
+        <img src="img/pexels-joshsorenson-1714208.jpg" alt="Proyecto 4" loading="lazy">
+      </div>
     </div>
-    <a href="../index.html" class="paquetes-link" style="display:block; text-align:center; margin-top: var(--spacing-xl);">
+    
+    <a href="../index.html" class="btn btn-primary">
       Volver al inicio <span class="arrow">→</span>
     </a>
   </section>

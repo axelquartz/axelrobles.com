@@ -1,3 +1,4 @@
+@import "style.css";
 
 /* CSS Reset */
 * {
@@ -134,6 +135,8 @@
     padding: var(--spacing-xl) 0;
     position: relative;
     background-color: transparent;
+    padding-top: var(--spacing-md);
+
   }
   
   #portafolio::before {
