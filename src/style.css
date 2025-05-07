@@ -1,4 +1,3 @@
-
 /* CSS Reset */
 * {
   margin: 0;
@@ -232,7 +231,7 @@ section {
   height: 70%;
   top: 0;
   right: 0;
-  background-image: url('/src/img/pexels-joshsorenson-1714208.jpg');
+  background-image: url('/src/img/axel.jpg');
   z-index: 2;
 }
 
@@ -241,7 +240,7 @@ section {
   height: 60%;
   bottom: 0;
   left: 0;
-  background-image: url('/src/img/pexels-joshsorenson-1714208.jpg');
+  background-image: url('/src/img/axel2.jpg');
   z-index: 1;
 }
 
@@ -486,7 +485,7 @@ section {
   flex-direction: column;
   background-color: var(--bg-dark);
   padding: var(--spacing-sm) var(--spacing-md);
-  padding-bottom: 70px; /* Space for button + margin */
+  padding-bottom: 40px; /* Space for button + margin */
   border-radius: var(--border-radius);
   transition: all 0.5s cubic-bezier(0.165, 0.84, 0.44, 1);
   position: relative;
@@ -505,12 +504,17 @@ section {
   border: 1px solid var(--primary);
 }
 
+.paquete-content {
+  flex-grow: 1;
+}
+
 .paquete h3 {
   font-size: 1.5rem;
   margin-bottom: var(--spacing-md);
   position: relative;
   padding-bottom: var(--spacing-sm);
   color: var(--primary);
+  text-align: left;
 }
 
 .paquete h3:after {
@@ -569,33 +573,30 @@ section {
   color: var(--primary);
 }
 
-/* Button positioning */
-
 .paquete button {
-  position: absolute;
-  bottom: var(--spacing-sm);
-  left: var(--spacing-md);
-  right: var(--spacing-md);
+  display: inline-block;
   padding: 0.75rem 1.5rem;
-  background-color: var(--primary);
-  color: #000000;
-  border: none;
   border-radius: var(--border-radius);
+  background-color: var(--primary);
+  color: var(--bg-dark);
   font-weight: 600;
+  text-align: center;
+  text-decoration: none;
+  border: none;
   cursor: pointer;
   transition: all 0.3s ease;
-  text-transform: uppercase;
-  letter-spacing: 0.05em;
-  font-size: 0.875rem;
-  box-shadow: none !important;
-  width: calc(100% - var(--spacing-md) * 2);
-  text-align: center;
+  margin-top: auto;
+  width: 100%;
 }
 
 .paquete button:hover {
   background-color: var(--primary-dark);
   transform: translateY(-2px);
-  box-shadow: none !important;
+}
+
+.paquete button:focus {
+  outline: 2px solid var(--primary);
+  outline-offset: 2px;
 }
 
 .paquetes-link {
@@ -957,7 +958,6 @@ section {
   object-fit: cover;
   margin: 0 auto var(--spacing-sm);
   display: block;
-  border: 2px solid var(--primary);
 }
 
 .testimonio blockquote {
@@ -1077,6 +1077,14 @@ footer p:last-child {
   margin-top: var(--spacing-lg);
   color: var(--text-muted);
   font-size: 0.8rem;
+}
+
+.footer-cta {
+  display: none;
+}
+
+.footer-copyright {
+  margin-top: 1.5rem;
 }
 
 /* Global Button Styles */
@@ -1258,4 +1266,67 @@ button:hover, .btn:hover {
   p {
     font-size: 1rem;
   }
+}
+
+/* Footer Styles */
+.site-footer {
+  background: var(--bg-dark);
+  color: var(--text);
+  padding: 3rem 0 1.5rem;
+  border-top: 1px solid rgba(255,255,255,0.1);
+}
+
+.footer-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 0 var(--spacing-sm);
+}
+
+.footer-logo img {
+  height: 50px;
+}
+
+.footer-links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.5rem;
+}
+
+.footer-link {
+  color: var(--text);
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.footer-link:hover {
+  color: var(--primary);
+}
+
+.footer-button {
+  background-color: var(--primary);
+  color: var(--bg-dark);
+  padding: 0.75rem 1.5rem;
+  border-radius: var(--border-radius);
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.2s;
+}
+
+.footer-button:hover {
+  background-color: var(--primary-dark);
+  transform: translateY(-2px);
+}
+
+.footer-copyright {
+  text-align: center;
+  margin-top: 3rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid rgba(255,255,255,0.1);
+  font-size: 0.875rem;
+  opacity: 0.8;
 }
