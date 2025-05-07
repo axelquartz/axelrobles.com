@@ -78,6 +78,7 @@ h3 {
 p {
   margin-bottom: var(--spacing-md);
   font-size: 1.125rem;
+  font-weight: 300;
   /* max-width: 65ch; */
 }
 
