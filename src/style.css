@@ -134,6 +134,35 @@ section {
   overflow: hidden;
 }
 
+.hero::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: radial-gradient(circle, var(--primary-dark) 1px, transparent 1px);
+  background-size: 40px 40px;
+  opacity: 0.3;
+  z-index: 0;
+}
+
+.hero::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: radial-gradient(circle at center, var(--bg-light) 0%, transparent 70%);
+  z-index: 1;
+}
+
+.hero .container {
+  position: relative;
+  z-index: 2;
+}
+
 .hero-grid {
   display: grid;
   grid-template-columns: 4fr 3fr;
@@ -298,8 +327,7 @@ section {
   overflow: hidden;
   padding-top: var(--spacing-md);
   padding-bottom: var(--spacing-xl);
-  border-top: 1px solid rgba(255,255,255,0.03);
-  border-bottom: 1px solid rgba(255,255,255,0.03);
+
 }
 
 #beneficios:before {
@@ -307,8 +335,8 @@ section {
   position: absolute;
   top: 0;
   right: 0;
-  width: 300px;
-  height: 300px;
+  width: 800px;
+  height: 800px;
   background: radial-gradient(circle, rgba(203,255,91,0.05) 0%, rgba(0,0,0,0) 70%);
   z-index: 0;
 }
@@ -406,9 +434,35 @@ section {
 /* Pricing Grid */
 #paquetes {
   position: relative;
+  overflow: hidden;
   padding-top: var(--spacing-md);
   padding-bottom: var(--spacing-xl);
 }
+
+#paquetes::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(circle, var(--primary-dark) 1px, transparent 1px);
+  background-size: 40px 40px;
+  opacity: 0.2;
+  z-index: -1;
+}
+
+#paquetes::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: radial-gradient(circle at center, var(--bg-light) 0%, transparent 70%);
+  z-index: -1;
+}
+
 
 #paquetes h2 {
   text-align: center;
@@ -590,11 +644,115 @@ section {
   transition: transform 0.3s ease;
 }
 
+/* Brands Section */
+#marcas {
+  position: relative;
+  overflow: hidden;
+}
+
+#marcas::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(circle, var(--primary-dark) 1px, transparent 1px);
+  background-size: 40px 40px;
+  opacity: 0.2;
+  z-index: -1;
+}
+
+#marcas::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: radial-gradient(circle at center, var(--bg-light) 0%, transparent 70%);
+  z-index: -1;
+}
+
+#marcas h2 {
+  text-align: center;
+  margin-bottom: var(--spacing-xl);
+  position: relative;
+  display: block;
+  max-width: 20ch;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#marcas h2:after {
+  content: '';
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 60px;
+  height: 3px;
+  background-color: var(--primary);
+}
+
+#marcas .marcas-row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: var(--spacing-xl);
+}
+
+#marcas .marcas-row img {
+  width: 150px;
+  object-fit: cover;
+  border-radius: var(--border-radius);
+}
+
+/* Brands Carousel */
+.marcas-container {
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+}
+
+.marcas-row {
+  display: flex;
+  gap: var(--spacing-xl);
+  animation: scroll 60s linear infinite;
+  width: max-content;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.marcas-row img {
+  width: 150px;
+  object-fit: cover;
+  border-radius: var(--border-radius);
+  flex-shrink: 0;
+}
+
 /* Portfolio Section */
 #portafolio {
-  background-color: var(--bg-subtle);
-  padding-top: var(--spacing-md);
-  padding-bottom: var(--spacing-xl);
+  position: relative;
+  overflow: hidden;
+}
+
+#portafolio::before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 800px;
+  height: 800px;
+  background: radial-gradient(circle, rgba(203,255,91,0.05) 0%, rgba(0,0,0,0) 70%);
+  z-index: 0;
 }
 
 .portafolio-row {
@@ -675,9 +833,34 @@ section {
 
 /* Testimonials Section */
 #testimonios {
-  background-color: var(--bg-light);
+  position: relative;
+  overflow: hidden;
   padding-top: var(--spacing-md);
   padding-bottom: var(--spacing-xl);
+}
+
+#testimonios::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(circle, var(--primary-dark) 1px, transparent 1px);
+  background-size: 40px 40px;
+  opacity: 0.2;
+  z-index: -1;
+}
+
+#testimonios::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: radial-gradient(circle at center, var(--bg-light) 0%, transparent 70%);
+  z-index: -1;
 }
 
 #testimonios h2 {
@@ -754,10 +937,6 @@ section {
 
 /* Contact Section */
 #contacto {
-  background-color: var(--bg-light);
-  padding-top: var(--spacing-xl);
-  padding-bottom: var(--spacing-xl);
-  text-align: center;
   position: relative;
   overflow: hidden;
 }
@@ -766,9 +945,11 @@ section {
   content: '';
   position: absolute;
   top: 0;
-  left: 0;
   right: 0;
-  height: 4px;
+  width: 800px;
+  height: 800px;
+  background: radial-gradient(circle, rgba(203,255,91,0.05) 0%, rgba(0,0,0,0) 70%);
+  z-index: 0;
 }
 
 .contact-container {
@@ -777,10 +958,14 @@ section {
   padding: 0 var(--spacing-md);
 }
 
+.contact-container h2 {
+  margin: var(--spacing-md);
+}
+
 .contact-subtitle {
   color: var(--text-light);
   max-width: 60ch;
-  margin: var(--spacing-md) auto var(--spacing-lg);
+  margin: var(--spacing-md) auto var(--spacing-md);
   font-size: 1.125rem;
   line-height: 1.6;
 }
@@ -790,7 +975,7 @@ section {
   gap: var(--spacing-md);
   justify-content: center;
   flex-wrap: wrap;
-  margin-top: var(--spacing-xl);
+  margin-top: var(--spacing-lg);
 }
 
 .whatsapp-btn, .email-btn {
@@ -827,13 +1012,12 @@ footer {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  background-color: var(--bg-dark);
+  background-color: var(--bg-);
   color: var(--text-light);
   padding: var(--spacing-xl)
   var(--spacing-md);
   text-align: center;
   font-size: 0.8rem;
-  border-top: 1px solid rgba(255,255,255,0.1);
 }
 
 footer p {
