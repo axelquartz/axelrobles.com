@@ -5,6 +5,8 @@ window.addEventListener('DOMContentLoaded', function () {
   if (toggle && links) {
     toggle.addEventListener('click', function () {
       links.classList.toggle('open');
+      this.classList.toggle('active');
+      links.classList.toggle('active');
     });
   }
 });

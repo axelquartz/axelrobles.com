@@ -62,7 +62,16 @@
   height: 3px;
   background: var(--primary);
   border-radius: 2px;
-  transition: all 0.3s;
+  transition: all 0.3s ease;
+}
+.navbar-toggle.active span:nth-child(1) {
+  transform: translateY(7px) rotate(45deg);
+}
+.navbar-toggle.active span:nth-child(2) {
+  opacity: 0;
+}
+.navbar-toggle.active span:nth-child(3) {
+  transform: translateY(-7px) rotate(-45deg);
 }
 .navbar-cta {
   position: absolute;
@@ -107,5 +116,15 @@
   }
   .navbar-toggle {
     display: flex;
+  }
+}
+@media (max-width: 768px) {
+  .navbar-toggle {
+    position: absolute;
+    right: var(--spacing-md);
+    left: auto;
+  }
+  .navbar-cta {
+    display: none;
   }
 }
