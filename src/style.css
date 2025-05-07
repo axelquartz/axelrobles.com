@@ -236,6 +236,12 @@ section {
   z-index: 2;
 }
 
+@media (max-width: 768px) {
+  .hero-image-1 {
+    background-image: url('/src/img/axel-mobile.jpg');
+  }
+}
+
 .hero-image-2 {
   width: 50%;
   height: 60%;
