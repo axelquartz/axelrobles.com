@@ -17,7 +17,7 @@
   --text-light: #aaaaaa;  /* Lighter text for dark mode */
   --bg-light: #0d0d0d;    /* Dark background */
   --bg-dark: #111111;     /* Darker background */
-  --bg-subtle: #111111;   /* Subtle dark background */
+  --bg-subtle: #222222;   /* Subtle dark background */
   --white: #ffffff;
   --max-width: 1400px;
   --border-radius: 8px;  /* Restored border radius */
