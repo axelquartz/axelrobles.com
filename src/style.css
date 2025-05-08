@@ -399,6 +399,48 @@ section {
   transform: scale(1.05);
 }
 
+.beneficios-lista-2 {
+  list-style: none;
+  margin-bottom: var(--spacing-md);
+  border-radius: 8px;
+}
+
+.beneficios-lista-2 li {
+  display: flex;
+  align-items: center;
+  margin-bottom: var(--spacing-sm);
+  padding: var(--spacing-sm) var(--spacing-sm);
+  border-left: 2px solid transparent;
+  transition: all 0.3s ease;
+  background-color: rgba(0,0,0,0.1);
+  border-radius: var(--border-radius);
+  margin-bottom: 8px;
+}
+
+.beneficios-lista-2 li:hover {
+  background-color: rgba(0,0,0,0.4);
+}
+
+.beneficios-lista-2 .icono {
+  font-size: 1.0rem;
+  font-family: var(--font-primary);
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 24px;
+  height: 24px;
+  background-color: var(--primary);
+  color: #000;
+  border-radius: 50%;
+  margin-right: var(--spacing-sm);
+  font-weight: 900;
+}
+
+.beneficios-lista-2 li:hover .icono {
+  background-color: var(--primary-dark);
+  transform: scale(1.05);
+}
+
 .vendedor-frase {
   font-style: italic;
   text-align: center;

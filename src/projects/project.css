@@ -202,6 +202,30 @@ body::before {
   margin-top: var(--spacing-xl);
 }
 
+.project-cta {
+  display: flex;
+  justify-content: center;
+  margin: var(--spacing-xl) 0;
+}
+
+.project-cta .button {
+  display: inline-block;
+  padding: 0.5rem 1.25rem;
+  background-color: var(--bg-subtle);
+  color: var(--primary);
+  border-radius: var(--border-radius);
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 0.9rem;
+  transition: all 0.2s ease;
+  border: 1px solid var(--primary);
+}
+
+.project-cta .button:hover {
+  background-color: var(--primary);
+  color: var(--white);
+}
+
 /* Marcas Carousel Styles */
 .project-marcas {
   padding: var(--spacing-xl) 0 var(--spacing-lg) 0;
