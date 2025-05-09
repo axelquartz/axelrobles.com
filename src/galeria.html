@@ -3,30 +3,41 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Galería | Axel Robles">
-  <title>Galería | Axel Robles</title>
+  <meta name="description" content="Galería de proyectos de diseño web y branding realizados por Axel Robles. Explora imágenes de sitios web y marcas creadas para negocios mexicanos.">
+  <meta name="keywords" content="galería diseño web, ejemplos branding, portafolio imágenes, diseño web México, Axel Robles, proyectos web">
+  <meta name="author" content="Axel Robles">
+  <meta name="robots" content="index, follow">
+  <meta property="og:title" content="Galería de Proyectos de Diseño Web | Axel Robles">
+  <meta property="og:description" content="Explora nuestra galería de proyectos de diseño web y branding. Imágenes de sitios web y marcas creadas para negocios mexicanos.">
+  <meta property="og:image" content="https://axelrobles.com/src/img/logo.png">
+  <meta property="og:url" content="https://axelrobles.com/src/galeria.html">
+  <meta property="og:type" content="website">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="canonical" href="https://axelrobles.com/src/galeria.html">
+  <title>Galería de Proyectos de Diseño Web | Axel Robles</title>
   <link rel="stylesheet" href="navbar.css">
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="galeria.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <script defer src="navbar.js"></script>
 </head>
 <body>
-  <nav class="navbar">
+  <nav class="navbar" role="navigation" aria-label="Navegación principal">
     <div class="navbar-container">
-      <a href="../index.html" class="navbar-logo">
+      <a href="../index.html" class="navbar-logo" aria-label="Inicio - Axel Robles">
         <img src="img/logo.png" alt="Axel Robles Logo" height="40">
       </a>
-      <a href="https://wa.link/nem7a2" target="_blank" class="navbar-cta">Contáctame</a>
-      <div class="navbar-toggle" aria-label="Abrir menú" tabindex="0">
+      <a href="https://wa.link/nem7a2" target="_blank" rel="noopener" class="navbar-cta" aria-label="Contáctame por WhatsApp">Contáctame</a>
+      <button class="navbar-toggle" aria-expanded="false" aria-controls="navbar-links" aria-label="Abrir menú de navegación">
         <span></span>
         <span></span>
         <span></span>
-      </div>
-      <div class="navbar-links">
+      </button>
+      <div class="navbar-links" id="navbar-links">
         <a href="../index.html" class="navbar-link">Inicio</a>
         <a href="portafolio.html" class="navbar-link">Portafolio</a>
         <a href="precios.html" class="navbar-link">Precios</a>
-        <a href="galeria.html" class="navbar-link">Galería</a>
+        <a href="galeria.html" class="navbar-link" aria-current="page">Galería</a>
       </div>
     </div>
   </nav>
@@ -154,7 +165,7 @@
   <footer class="site-footer">
     <div class="footer-container">
       <div class="footer-logo">
-        <img src="img/logo.png" alt="Axel Robles Logo" height="40">
+        <img src="./img/logo.png" alt="Axel Robles Logo" height="40">
       </div>
       <div class="footer-links">
         <a href="../index.html" class="footer-link">Inicio</a>
@@ -162,9 +173,23 @@
         <a href="precios.html" class="footer-link">Precios</a>
         <a href="galeria.html" class="footer-link">Galería</a>
       </div>
+      <div class="footer-social">
+        <p class="social-subtitle">Sigue mis redes sociales</p>
+        <div class="social-icons">
+          <a href="https://www.facebook.com/axelroblesbranding" target="_blank" class="social-icon">
+            <i class="fab fa-facebook-f"></i>
+          </a>
+          <a href="https://www.instagram.com/axelroblesbranding" target="_blank" class="social-icon">
+            <i class="fab fa-instagram"></i>
+          </a>
+          <a href="https://www.tiktok.com/@axelrobles.branding" target="_blank" class="social-icon">
+            <i class="fab fa-tiktok"></i>
+          </a>
+        </div>
+      </div>
     </div>
     <div class="footer-copyright">
-      2025 Axel Robles. Todos los derechos reservados.
+      &copy; 2025 Axel Robles. Todos los derechos reservados.
     </div>
   </footer>
 </body>
