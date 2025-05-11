@@ -8,7 +8,7 @@ RewriteBase /
 RewriteCond %{REQUEST_FILENAME} !-d
 RewriteRule ^(.*)/$ /$1 [L,R=301]
 
-# Handle the main pages
+# Handle clean URLs for main pages
 RewriteRule ^portafolio/?$ src/portafolio.html [NC,L]
 RewriteRule ^precios/?$ src/precios.html [NC,L]
 RewriteRule ^galeria/?$ src/galeria.html [NC,L]
