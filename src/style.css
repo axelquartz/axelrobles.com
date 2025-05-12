@@ -1764,3 +1764,14 @@ button:hover, .btn:hover {
     box-sizing: border-box;
   }
 }
+
+/* Hide contacto menu item in desktop view */
+.navbar-links .navbar-link[href*="contacto"] {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .navbar-links .navbar-link[href*="contacto"] {
+    display: block;
+  }
+}
